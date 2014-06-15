@@ -23,9 +23,8 @@ function elgg_nodejs() {
 		'src' => $_SERVER['HTTP_HOST'] . ':7890/easyrtc/easyrtc',
 		'deps' => array('socket.io')
 	));
-	elgg_define_js('handlebars', array(
-		'src' => '/mod/elgg-nodejs/vendors/handlebars-v1.3.0'
-	));
+	elgg_register_js('handlebars', '/mod/elgg-nodejs/vendors/handlebars-v1.3.0');
+	elgg_load_js('handlebars');
 
 	elgg_register_plugin_hook_handler('to:object', 'entity', 'elgg_nodejs_user_to_object');
 

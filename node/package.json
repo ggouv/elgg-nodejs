@@ -1,0 +1,19 @@
+{
+  "name"        : "elgg-nodejs",
+  "version"     : "0.0.1",
+  "author"      : "Emmanuel Salomon <emmanuel.salomon@gmail.com>",
+  "description" : "Provide a bi-directional realtime framework for Elgg to play with socket.io and easyRTC trough a node.js server",
+
+  "dependencies" : {
+    "express"          : ">=4.0",
+    "socket.io"        : ">=1.0.4",
+    "socket.io-client" : ">=1.0.4",
+    "easyrtc"          : "*",
+    "underscore"       : ">=1.6.0",
+    "body-parser"      : ">=1.2.0"
+  },
+
+  "engines" : {
+    "node"      : ">=0.8"
+  }
+}
